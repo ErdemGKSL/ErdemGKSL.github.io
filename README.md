@@ -1,1 +1,0 @@
-# ErdemGKSL.github.io
