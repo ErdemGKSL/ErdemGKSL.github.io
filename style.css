@@ -40,7 +40,7 @@ body {
   width: 6rem;
   border-radius: 100%;
   margin: 1.2rem;
-  box-shadow: #3c6cc5 0 0 5px 5px;
+  box-shadow: #3c6cc5 0 0 5px 6px;
 }
 
 .links:hover > a > img:hover {
@@ -50,6 +50,9 @@ body {
   box-shadow: #74a5ff 0 0 7px 12px;
 }
 
+.links > a > img {
+  box-shadow: #3c6cc5 0 0 0px 4px;
+}
 
 .links {
   display: flex;
