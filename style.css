@@ -1,173 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
-
-html,
+/* design a portfolio page */
 body {
-  width: 100%;
-  height: 100%;
-  overflow: overlay;
+  /* add background image with url https://cdn.discordapp.com/attachments/1033802934049321130/1037311330467721216/CloudyBGAsset_18x.png */
+  background-image: url(https://cdn.discordapp.com/attachments/1033802934049321130/1037311330467721216/CloudyBGAsset_18x.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-color: #000000;
+  /* add font family */
+    background-color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(44, 44, 44);
+    margin: 0;
+    padding: 0;
+    /* center divs in it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.mini-pages {
-  min-height: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #6565ff41;
-  background-image: url("https://wallsbazar.com/wp-content/uploads/2021/11/Space-Wallpaper.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: auto;
-  flex-direction: column;
+/* body > img is an profile photo that gets bigger on hover */
+
+body > img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid #f0f0f0;
+    transition: all 0.5s ease;
 }
 
-.links > a > img {
-  width: 6rem;
-  border-radius: 100%;
-  margin: 1.2rem;
-  box-shadow: 0;
-  transition: 300ms;
+body > img:hover {
+    border: 5px solid #f0f0f0;
+    transform: scale(1.1);
 }
 
-.links:hover > a > img {
-  width: 6rem;
-  border-radius: 100%;
-  margin: 1.2rem;
-  box-shadow: #3c6cc5 0 0 5px 6px;
+
+
+body > h1 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
 }
 
-.links:hover > a > img:hover {
-  width: 6rem;
-  border-radius: 100%;
-  margin: 1.2rem;
-  box-shadow: #74a5ff 0 0 7px 12px;
+body > p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    /* center this and give max width */
+    text-align: center;
+    max-width: 600px;
+
 }
 
-.links > a > img {
-  box-shadow: #3c6cc5 0 0 0px 4px;
+a {
+    color: #333;
+    text-decoration: none;
 }
 
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: #7595ff;
-  border-radius: 16px;
-  margin-bottom: 20px;
+a:hover {
+    color: #333;
+    text-decoration: underline;
 }
 
-.mini-page-packs {
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  background-color: #99b1ff;
-  overflow: auto;
-  flex-direction: row;
+a:visited {
+    color: #333;
 }
 
-.mini-page {
-  margin: 2rem;
-  max-width: 720px;
-  width: 100%;
-  background-color: #a6bbff91;
-  border-radius: 1rem;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-  display: flex;
+a:active {
+    color: #333;
 }
 
-.avatar-wrap {
-  position: relative;
-  margin: 1.5rem;
-  width: 22rem;
-  height: 22rem;
-  border-radius: 100px;
-  background-color: #95aeffd0;
+a:focus {
+    color: #333;
 }
 
-.avatar {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 100%;
-  position: absolute;
-  top: 3.5rem;
-  left: 3.5rem;
-  transition: 250ms;
+a:link {
+    color: #333;
 }
 
-.avatar:hover {
-  width: 22rem;
-  height: 22rem;
-  border-radius: 100px;
-  top: 0;
-  left: 0;
-  /* top: 1.5rem;
-  left: 1.5rem; */
+body > .project {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #eee;
+    border-left: 5px solid #eee;
+    border-right: 5px solid #eee;
+    border-bottom: 5px solid #eee;    
 }
 
-p {
-  font-family: 'Fredoka One', cursive;
-  font-weight: 400;
-  font-size: 30px;
-  text-align: center;
+/* align buttons horizantel and centered with horizantal and vertical as mini buttons */
+
+body > .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
-.about-me {
-  padding: 2.2rem;
-  color: #e4f7ff;
-  font-family: 'Fredoka One', cursive;
-  font-weight: 400;
-  font-size: 25px;
-  text-align: center;
+body > .buttons > a {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #eee;
+    border: 0px solid #eee;
+    border-left: 0px solid #eee;
+    border-right: 0px solid #eee;
+    border-bottom: 0px solid #eee;
+    transition: all 0.5s ease;
+    /* force buttons to be square */
+    width: 50px;
+    height: 50px;
+    /* align image horizantel and vertically centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-me > a {
-  color: #60ffff;
-  font-family: 'Fredoka One', cursive;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  z-index: 2;
+body > .buttons > a:hover {
+    background-color: #f0f0f0;
+    border: 2px solid #f0f0f0;
+    border-left: 2px solid #f0f0f0;
+    border-right: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+    /* transparent background color */
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-::-webkit-scrollbar {
-  width: 11px;
+body > .buttons > a > img {
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+    max-height: 50px;
 }
 
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 11px 11px rgba(0, 0, 0, 0.05);
-  border: solid 2px transparent;
-  border-radius: 11px;
+body > .buttons > a > span {
+    display: none;
 }
 
-::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 11px 11px rgba(0, 0, 0, 0.1);
-  border: solid 2px transparent;
-  border-radius: 11px;
-}
 
-::-webkit-scrollbar-thumb:hover {
-  box-shadow: inset 0 0 11px 11px #9090ff;
-}
+body > .background {
+  /* make this div at the end of the page an z axis behind and behind of the content */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-repeat: repeat-y;
+    background-size: 100%;
 
-::-webkit-scrollbar-button {
-  display: none;
-}
-
-::selection {
-  color: white;
-  background: #195bff;
-  text-shadow: 0px 4px 4px #ffffff;
 }
