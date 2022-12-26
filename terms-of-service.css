@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+  font-family: 'Quicksand', sans-serif;
+}
 body {
   background-image: url('https://images.unsplash.com/photo-1534841090574-cba2d662b62e?w=1000');
   background-size: cover;
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.5);
 }
-* {
-  font-family: 'Quicksand', sans-serif;
-}
+
 .terms-container {
   width: 80%;
   max-width: 600px;
